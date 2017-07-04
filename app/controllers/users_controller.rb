@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def show
     # find the user record
     @user = User.find(params[:id])
-    @micropost = @user.Microposts.all
+    @micropost = @user.microposts.first
   end
 
   # GET /users/new
