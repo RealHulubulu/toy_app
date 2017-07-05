@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     # find the user record
     @user = User.find(params[:id])
     @micropost = @user.microposts.first
+	
   end
 
   # GET /users/new
