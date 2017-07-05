@@ -13,12 +13,12 @@
 
 <% if @micropost %> 
   <p>
-    <strong>Content:</strong>
+    <strong>First Post:</strong>
     <%= @micropost.content %>
   </p>
 <% end %>
 
 
-
+<%= link_to 'Microposts', microposts_path %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
